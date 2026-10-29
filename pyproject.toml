@@ -1,0 +1,28 @@
+[project]
+name = "as-ocr"
+version = "0.1.0"
+description = "Source-grounded component enrichment, validation and linked evidence exports"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=1.0.8,<2",
+    "httpx>=0.28,<0.29",
+    "pillow>=13.0.0",
+    "pydantic>=2,<3",
+    "pymupdf>=1.24,<2",
+]
+
+[project.scripts]
+as-ocr = "as_ocr:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

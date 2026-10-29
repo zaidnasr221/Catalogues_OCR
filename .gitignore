@@ -1,0 +1,71 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Virtual environments
+.venv
+venv/
+
+# Generated ingestion indexes and previews
+out/
+output/
+
+# Source catalogs, model weights, and private runtime evidence stay local.
+/Data/
+/data/
+/models/
+/model/
+/_internal/
+/out*/
+/out1
+/output*/
+/final_output*
+*.pdf
+*.PDF
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.bin
+
+# Generated databases, diagnostics, logs, and delivery archives.
+*.sqlite
+*.sqlite3
+*.db
+*-wal
+*-shm
+*.log
+*.log.*
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Machine-local agent/cloud credentials and private key material.
+/.aws/
+/.ssh/
+/.codex/
+/.agents/
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+.git-credentials
+
+# Local application/server environment (never commit credentials)
+.env
+.env.*
+!.env.example

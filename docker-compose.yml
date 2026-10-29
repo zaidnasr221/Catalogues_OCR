@@ -1,0 +1,57 @@
+name: as-ocr-vision
+services:
+  qwen-vision:
+    # Official v0.27.1 ARM64 manifest, resolved from the release tag.
+    image: vllm/vllm-openai:v0.27.1@sha256:1c8e60a0841b333c700488cb029d3664807249da0c071e862191b00fe34b228c
+    platform: linux/arm64
+    gpus: all
+    ports:
+      - "127.0.0.1:${AS_OCR_QWEN_PORT:-8003}:8000"
+    volumes:
+      - type: bind
+        source: /home/domapp/AiWork/models/Qwen3.8-27B-NVFP4
+        target: /model
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./server/start.py
+        target: /opt/as-ocr/start.py
+        read_only: true
+        bind:
+          create_host_path: false
+    environment:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    shm_size: "2gb"
+    mem_limit: "48g"
+    restart: "no"
+    entrypoint: ["python3", "/opt/as-ocr/start.py"]
+    command:
+      - /model
+      - --host
+      - "0.0.0.0"
+      - --port
+      - "8000"
+      - --served-model-name
+      - "${AS_OCR_QWEN_MODEL:-qwen-catalog-vision}"
+      - --max-model-len
+      - "32768"
+      - --max-num-seqs
+      - "64"
+      - --max-num-batched-tokens
+      - "8192"
+      - --gpu-memory-utilization
+      - "0.30"
+      - --limit-mm-per-prompt
+      - '{"image":1,"video":0}'
+      - --default-chat-template-kwargs
+      - '{"enable_thinking":false}'
+      - --no-enable-log-requests
+      - --disable-log-stats
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5).close()"]
+      interval: 15s
+      timeout: 6s
+      start_period: 10m
+      retries: 3

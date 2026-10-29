@@ -1,0 +1,422 @@
+{
+  "crop_reviews": [
+    {
+      "ambiguous_context": [
+        [
+          315.41943359375,
+          513.6199951171875,
+          380.9046630859375,
+          547.300048828125
+        ],
+        [
+          315.41943359375,
+          479.9400329589844,
+          380.9046630859375,
+          505.20001220703125
+        ],
+        [
+          311.760009765625,
+          483.05999755859375,
+          334.1999816894531,
+          490.20001220703125
+        ],
+        [
+          309.6000061035156,
+          518.3399658203125,
+          313.6199951171875,
+          525.47998046875
+        ],
+        [
+          275.2799987792969,
+          620.280029296875,
+          311.93597412109375,
+          630.3599853515625
+        ],
+        [
+          511.3800048828125,
+          620.280029296875,
+          518.760009765625,
+          631.260009765625
+        ]
+      ],
+      "annotation_proofs": [
+        {
+          "annotation": {
+            "association": "leader",
+            "box": [
+              315.41943359375,
+              513.6199951171875,
+              380.9046630859375,
+              547.300048828125
+            ],
+            "evidence": "Leader from the spacer label points to the hatched spacer region between the glass panes.",
+            "status": "REVIEW",
+            "target_box": [
+              422.57708740234375,
+              522.0400390625,
+              452.34307861328125,
+              538.8800048828125
+            ]
+          },
+          "ownership_verified": false,
+          "source_verification": {
+            "reason": "Invalid or missing leader polyline",
+            "verified": false
+          }
+        },
+        {
+          "annotation": {
+            "association": "leader",
+            "box": [
+              315.41943359375,
+              479.9400329589844,
+              380.9046630859375,
+              505.20001220703125
+            ],
+            "evidence": "Leader from the structural silicone label points to the silicone bond between the glass unit and the aluminium profile.",
+            "status": "REVIEW",
+            "target_box": [
+              416.6239013671875,
+              488.3600158691406,
+              434.4834899902344,
+              505.20001220703125
+            ]
+          },
+          "ownership_verified": false,
+          "source_verification": {
+            "reason": "Invalid or missing leader polyline",
+            "verified": false
+          }
+        }
+      ],
+      "corrected_context_box": [
+        275.2799987792969,
+        412.58001708984375,
+        518.760009765625,
+        639.9199829101562
+      ],
+      "corrections": [
+        {
+          "box": [
+            311.760009765625,
+            483.05999755859375,
+            334.1999816894531,
+            490.20001220703125
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 914,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            309.6000061035156,
+            518.3399658203125,
+            313.6199951171875,
+            525.47998046875
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 843,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            275.2799987792969,
+            620.280029296875,
+            311.93597412109375,
+            630.3599853515625
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 749,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            511.3800048828125,
+            620.280029296875,
+            518.760009765625,
+            631.260009765625
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 697,
+          "reason": "Retain complete source text extent"
+        }
+      ],
+      "initial_context_box": [
+        315.41943359375,
+        412.58001708984375,
+        517.828369140625,
+        639.9199829101562
+      ],
+      "issues": [
+        "Annotation leader or label ownership is not source-verified",
+        "Text extent retained but annotation ownership remains ambiguous",
+        "Context overlaps an adjacent assembly; competing ownership requires REVIEW",
+        "Original-source ink touches corrected crop boundary; possible clipped label/leader",
+        "Detection has unresolved eligibility or annotation reviews"
+      ],
+      "status": "REVIEW",
+      "structural_box": [
+        404.71746826171875,
+        471.5199890136719,
+        505.92193603515625,
+        597.8200073242188
+      ],
+      "version": "1",
+      "wording_not_inferred": true
+    },
+    {
+      "ambiguous_context": [
+        [
+          89.19772338867188,
+          505.20001220703125,
+          178.49575805664062,
+          538.8800048828125
+        ],
+        [
+          311.760009765625,
+          483.05999755859375,
+          334.1999816894531,
+          490.20001220703125
+        ],
+        [
+          333.239990234375,
+          489.05999755859375,
+          334.2599792480469,
+          489.9599914550781
+        ],
+        [
+          333.17999267578125,
+          494.82000732421875,
+          337.67999267578125,
+          499.9800109863281
+        ],
+        [
+          335.94000244140625,
+          494.8199768066406,
+          344.2799987792969,
+          501.9599914550781
+        ],
+        [
+          311.70001220703125,
+          518.3399658203125,
+          344.5199890136719,
+          525.47998046875
+        ],
+        [
+          330.7200012207031,
+          517.9910278320312,
+          378.1199951171875,
+          525.47998046875
+        ],
+        [
+          362.4599914550781,
+          530.7000122070312,
+          378.22900390625,
+          536.4000244140625
+        ]
+      ],
+      "annotation_proofs": [
+        {
+          "annotation": {
+            "association": "leader",
+            "box": [
+              89.19772338867188,
+              505.20001220703125,
+              178.49575805664062,
+              538.8800048828125
+            ],
+            "evidence": "Leader from the spandrel frame label points to the aluminium frame profile on the right side of the detail.",
+            "status": "REVIEW",
+            "target_box": [
+              196.35537719726562,
+              513.6199951171875,
+              220.16818237304688,
+              530.4600219726562
+            ]
+          },
+          "ownership_verified": false,
+          "source_verification": {
+            "reason": "Invalid or missing leader polyline",
+            "verified": false
+          }
+        }
+      ],
+      "corrected_context_box": [
+        89.19772338867188,
+        412.58001708984375,
+        378.22900390625,
+        639.9199829101562
+      ],
+      "corrections": [
+        {
+          "box": [
+            311.760009765625,
+            483.05999755859375,
+            334.1999816894531,
+            490.20001220703125
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 914,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            333.239990234375,
+            489.05999755859375,
+            334.2599792480469,
+            489.9599914550781
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 904,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            333.17999267578125,
+            494.82000732421875,
+            337.67999267578125,
+            499.9800109863281
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 868,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            335.94000244140625,
+            494.8199768066406,
+            344.2799987792969,
+            501.9599914550781
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 867,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            311.70001220703125,
+            518.3399658203125,
+            344.5199890136719,
+            525.47998046875
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 841,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            330.7200012207031,
+            517.9910278320312,
+            378.1199951171875,
+            525.47998046875
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 831,
+          "reason": "Retain complete source text extent"
+        },
+        {
+          "box": [
+            362.4599914550781,
+            530.7000122070312,
+            378.22900390625,
+            536.4000244140625
+          ],
+          "kind": "possible_outlined_text",
+          "ordinal": 795,
+          "reason": "Retain complete source text extent"
+        }
+      ],
+      "initial_context_box": [
+        89.19772338867188,
+        412.58001708984375,
+        315.41943359375,
+        639.9199829101562
+      ],
+      "issues": [
+        "Annotation leader or label ownership is not source-verified",
+        "Text extent retained but annotation ownership remains ambiguous",
+        "Original-source ink touches corrected crop boundary; possible clipped label/leader",
+        "Detection has unresolved eligibility or annotation reviews"
+      ],
+      "status": "REVIEW",
+      "structural_box": [
+        190.40219116210938,
+        471.5199890136719,
+        297.559814453125,
+        597.8200073242188
+      ],
+      "version": "1",
+      "wording_not_inferred": true
+    }
+  ],
+  "leaders": {
+    "accepted_paths": [
+      [
+        [
+          30,
+          20
+        ],
+        [
+          60,
+          45
+        ]
+      ],
+      [
+        [
+          30,
+          70
+        ],
+        [
+          60,
+          60
+        ]
+      ]
+    ],
+    "complete": [
+      "2",
+      "COMPLETE"
+    ],
+    "duplicate": [
+      "2",
+      "COMPLETE"
+    ],
+    "missing_issues": [
+      "A source-verified Detection component leader is missing or ambiguous in the Callout census"
+    ],
+    "missing_known_detection_leader": [
+      "",
+      "INCOMPLETE_LEADER_COVERAGE"
+    ]
+  },
+  "page_pixels_sha256": "75d8cf37ec9267b8cc5d201cf1f42a7f8fd690e58528cf1535736a21d98fa2bc",
+  "render_mapping": {
+    "pixel_size": [
+      1132,
+      1600
+    ],
+    "pixels_to_source": [
+      -0.5262500047683716,
+      -0.0,
+      -0.0,
+      -0.5262500047683716,
+      595.219970703125,
+      842.0
+    ],
+    "source_context_box": [
+      0.0,
+      0.0,
+      595.219970703125,
+      842.0
+    ],
+    "source_to_pixels": [
+      -1.9002375602722168,
+      0.0,
+      0.0,
+      -1.9002375602722168,
+      1131.059326171875,
+      1600.0
+    ]
+  },
+  "source_page": 1,
+  "source_sha256": "d8173d47de9d732d527df7485aa3c0f1bbfcc4d6f5d7ebe6b7aea73ecd211e58"
+}
